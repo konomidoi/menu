@@ -6,7 +6,7 @@ require_once('menu.php');
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Café Progate</title>
+  <title>とろちゃんphotos</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
 </head>
