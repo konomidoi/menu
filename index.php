@@ -2,11 +2,12 @@
 require_once('data.php');
 require_once('menu.php');
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>とろちゃんphotos</title>
+  <title>Café Progate</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
 </head>
