@@ -4,7 +4,7 @@ require_once('food.php');
 require_once('review.php');
 require_once('user.php');
 
-$juice = new Drink('JUICE', 600, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/juice.png', 'アイス');
+$juice = new Drink('JUICE', 600, '/img/toro01.jpg', 'アイス');
 $coffee = new Drink('COFFEE', 500, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/coffee.png', 'ホット');
 $curry = new Food('CURRY', 900, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/curry.png', 3);
 $pasta = new Food('PASTA', 1200, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/pasta.png', 1);
@@ -19,7 +19,7 @@ $user4 = new User('sato', 'male');
 $users = array($user1, $user2, $user3, $user4);
 
 // 以下の$review1 ~ $review8を削除して、userIdプロパティをセットするためのコードを貼り付けてください
-$review1 = new Review($juice->getName(), $user1->getId(), '果肉たっぷりのオレンジジュースです！');
+$review1 = new Review($juice->getName(), $user1->getId(), 'カワイイねこちゃんですね！');
 $review2 = new Review($curry->getName(), $user1->getId(), '具がゴロゴロしていてとてもおいしいです');
 $review3 = new Review($coffee->getName(), $user2->getId(), '香りがいいです');
 $review4 = new Review($pasta->getName(), $user2->getId(), 'ソースが絶品です。また食べたい。');

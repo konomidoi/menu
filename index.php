@@ -7,14 +7,14 @@ require_once('menu.php');
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Café Progate</title>
+  <title>とろちゃん Photos</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="menu-wrapper container">
-    <h1 class="logo">Café Progate</h1>
-    <h3>メニュー<?php echo Menu::getCount() ?>品</h3>
+    <h1 class="logo">とろちゃん Photos</h1>
+    <h3>とろちゃん<?php echo Menu::getCount() ?>匹掲載中♪</h3>
     <form method="post" action="confirm.php">
       <div class="menu-items">
         <?php foreach ($menus as $menu): ?>
@@ -34,7 +34,7 @@ require_once('menu.php');
             <?php endif ?>
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
             <input type="text" value="0" name="<?php echo $menu->getName() ?>">
-            <span>個</span>
+            <span>枚</span>
           </div>
         <?php endforeach ?>
       </div>
