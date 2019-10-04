@@ -4,19 +4,72 @@ require_once('menu.php');
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>とろちゃん Photos</title>
+  <!-- stylesheets -->
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
 </head>
-<body>
+
+<body id="top">
+  <nav class="nav fixed-top">
+    <div class="nav__inner">
+      <span class="nav__title">とろちゃん Photos</span>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="" href="#qa">Q&A</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header__inner">
+      <p class="prof-img__outer">
+        <img src="./img/toro.jpg" alt="とろちゃんハウス" class="prof-img">
+      </p>
+      <h1 id="title" class="header__title">とろちゃんハウス</h1>
+      <h3>とろちゃん<?php echo Menu::getCount() ?>匹掲載中♪</h3>
+    </div>
+  </header>
+
   <div class="menu-wrapper container">
-    <h1 class="logo">とろちゃん Photos</h1>
-    <h3>とろちゃん<?php echo Menu::getCount() ?>匹掲載中♪</h3>
     <form method="post" action="confirm.php">
       <div class="menu-items">
+
+        <section id="portfolio" class="section portfolio">
+          <div class="section__inner">
+            <h2 class="section__title">とろちゃん Photos</h2>
+            <div class="portfolio__inner">
+              <ul class="tabs js-tabs">
+                <li class="is-active">1day</li>
+                <li>2day</li>
+                <li>3day</li>
+                <li>4day</li>
+                <li>5day</li>
+              </ul>
+
+              <div class="tabContents js-tabContents">
+                <!-- tab 01 -->
+                <div class="tabContents__inner is-active">
+                  <h3>portfolio 01</h3>
+
+
+                </div>
+
+                <!-- tab 02 -->
+                <div class="tabContents__inner">
+                  <h3>portfolio 02</h3>
+
+                </div>
+
         <?php foreach ($menus as $menu): ?>
           <div class="menu-item">
             <img src="<?php echo $menu->getImage() ?>" class="menu-item-image">
@@ -39,7 +92,7 @@ require_once('menu.php');
         <?php endforeach ?>
       </div>
       <input type="submit" value="注文する">
-    </form>
+    </form>ß
   </div>
 </body>
 </html>
