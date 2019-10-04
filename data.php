@@ -4,29 +4,29 @@ require_once('food.php');
 require_once('review.php');
 require_once('user.php');
 
-$juice = new Drink('JUICE', 600, '/img/toro01.jpg', 'アイス');
-$coffee = new Drink('COFFEE', 500, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/coffee.png', 'ホット');
-$curry = new Food('CURRY', 900, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/curry.png', 3);
-$pasta = new Food('PASTA', 1200, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/pasta.png', 1);
+$juice = new Drink('JUICE', 600, '/img/toro01.jpg', '公園');
+$coffee = new Drink('COFFEE', 500, '/img/toro02.jpg', 'DQW');
+$curry = new Food('CURRY', 900, '/img/toro03.jpg', 3);
+$pasta = new Food('PASTA', 1200, '/img/toro04.jpg', 1);
 
 $menus = array($juice, $coffee, $curry, $pasta);
 
-$user1 = new User('suzuki', 'male');
-$user2 = new User('tanaka', 'female');
-$user3 = new User('suzuki', 'female');
-$user4 = new User('sato', 'male');
+$user1 = new User('cat', 'male');
+$user2 = new User('doi', 'female');
+$user3 = new User('cat', 'female');
+$user4 = new User('toro', 'male');
 
 $users = array($user1, $user2, $user3, $user4);
 
-// 以下の$review1 ~ $review8を削除して、userIdプロパティをセットするためのコードを貼り付けてください
+// userIdプロパティをセットするためのコード
 $review1 = new Review($juice->getName(), $user1->getId(), 'カワイイねこちゃんですね！');
-$review2 = new Review($curry->getName(), $user1->getId(), '具がゴロゴロしていてとてもおいしいです');
-$review3 = new Review($coffee->getName(), $user2->getId(), '香りがいいです');
-$review4 = new Review($pasta->getName(), $user2->getId(), 'ソースが絶品です。また食べたい。');
-$review5 = new Review($juice->getName(), $user3->getId(), '普通のジュース');
-$review6 = new Review($curry->getName(), $user3->getId(), '値段の割においしいカレーだと思いました');
-$review7 = new Review($coffee->getName(), $user4->getId(), '苦味がちょうどよくて、おすすめです');
-$review8 = new Review($pasta->getName(), $user4->getId(), '具材にこだわりを感じました。');
+$review2 = new Review($curry->getName(), $user1->getId(), 'ベロニャーゴにベロベロされてるとろちゃん');
+$review3 = new Review($coffee->getName(), $user2->getId(), '眠そうなおめめがいいです');
+$review4 = new Review($pasta->getName(), $user2->getId(), '寝顔が最高です。');
+$review5 = new Review($juice->getName(), $user3->getId(), '普通のねこ');
+$review6 = new Review($curry->getName(), $user3->getId(), 'とろちゃんWALK');
+$review7 = new Review($coffee->getName(), $user4->getId(), 'もふもふしたい');
+$review8 = new Review($pasta->getName(), $user4->getId(), 'ソファーになりたい！');
 
 $reviews = array($review1, $review2, $review3, $review4, $review5, $review6, $review7, $review8);
 

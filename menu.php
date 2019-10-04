@@ -13,10 +13,6 @@ class Menu {
     self::$count++;
   }
 
-  public function hello() {
-    echo '私は'.$this->name.'です';
-  }
-
   public function getName() {
     return $this->name;
   }
@@ -34,7 +30,7 @@ class Menu {
   }
 
   public function getTaxIncludedPrice() {
-    return floor($this->price * 1.08);
+    return floor($this->price * 1.1);
   }
 
   public function getTotalPrice() {
