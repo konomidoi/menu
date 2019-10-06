@@ -21,10 +21,10 @@ require_once('menu.php');
 <body id="top">
   <nav class="nav fixed-top">
     <div class="nav__inner">
-      <span class="nav__title">とろちゃん Photos</span>
+      <span class="nav__title">とろちゃんハウス</span>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="" href="#portfolio">Portfolio</a>
+          <a class="" href="#portfolio">とろちゃん Photos</a>
         </li>
         <li class="nav__item">
           <a class="" href="#qa">Q&A</a>

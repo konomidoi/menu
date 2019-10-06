@@ -162,8 +162,7 @@ img {
 
 .prof-img {
   width: 100%;
-  position: absolute;
-  animation: pounding .5s linear infinite alternate;
+  animation: pounding 1.5s linear infinite alternate;
 }
 
 @keyframes pounding{
