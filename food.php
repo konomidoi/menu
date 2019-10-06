@@ -1,7 +1,7 @@
 <?php
 require_once('menu.php');
 
-class Food extends Menu {
+class Heart extends Menu {
   private $spiciness;
 
   public function __construct($name, $price, $image, $spiciness) {

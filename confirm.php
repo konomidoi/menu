@@ -1,12 +1,18 @@
 <?php require_once('data.php') ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>Progate</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>とろちゃん Photos</title>
+<!-- stylesheets -->
+<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/js/script.js"></script>
 </head>
 <body>
   <div class="order-wrapper">

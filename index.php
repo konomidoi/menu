@@ -11,8 +11,11 @@ require_once('menu.php');
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>とろちゃん Photos</title>
   <!-- stylesheets -->
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
 </head>
 
 <body id="top">
@@ -92,7 +95,7 @@ require_once('menu.php');
         <?php endforeach ?>
       </div>
       <input type="submit" value="注文する">
-    </form>ß
+    </form>
   </div>
 </body>
 </html>
