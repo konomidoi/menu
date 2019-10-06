@@ -13,9 +13,6 @@ require_once('menu.php');
   <!-- stylesheets -->
   <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
-  <!-- scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="/js/script.js"></script>
 </head>
 
 <body id="top">
