@@ -107,7 +107,8 @@ img {
 
 .header {
   padding: 142px 0 80px;
-  background-color: #04BF9D;
+  background-image: url("../img/bg_toro.jpg") no-repeat;
+  background-size:cover;
   color: #fff;
 }
 
