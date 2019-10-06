@@ -162,15 +162,41 @@ img {
 
 .prof-img {
   width: 100%;
+   animation: pounding .5s linear infinite alternate;
+}
+@keyframes pounding{
+  0%{ transform: scale(1.5); }
+  100%{ transform: scale(1); }
 }
 
 .prof-img__outer {
-  height: 240px;
-  width: 240px;
-  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -50px;
   overflow: hidden;
   background-color: #fff;
 }
+.prof-img__outer:before,
+.prof-img__outer:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.prof-img__outer:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+
 
 @media (max-width: 480px) {
   .prof-img__outer {
