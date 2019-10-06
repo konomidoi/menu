@@ -13,6 +13,9 @@ require_once('menu.php');
   <!-- stylesheets -->
   <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
 </head>
 
 <body id="top">
@@ -82,7 +85,7 @@ require_once('menu.php');
               <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <?php else: ?>
               <?php for ($i=0; $i<$menu->getSpiciness(); $i++): ?>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/chilli.png" class='icon-spiciness'>
+                <img src="/img/heart.png" class='icon-spiciness'>
               <?php endfor ?>
             <?php endif ?>
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
