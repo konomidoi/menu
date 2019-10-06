@@ -162,25 +162,17 @@ img {
 
 .prof-img {
   width: 100%;
-   animation: pounding .5s linear infinite alternate;
-}
-@keyframes pounding{
-  0%{ transform: scale(1.5); }
-  100%{ transform: scale(1); }
-}
-
-.prof-img__outer {
   position: absolute;
   width: 100px;
   height: 90px;
   left: 50%;
   margin-top: -45px;
   margin-left: -50px;
-  overflow: hidden;
-  background-color: #fff;
+   animation: pounding .5s linear infinite alternate;
 }
-.prof-img__outer:before,
-.prof-img__outer:after {
+
+.prof-img:before,
+.prof-img:after {
   position: absolute;
   content: "";
   left: 50px;
@@ -191,12 +183,21 @@ img {
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
-.prof-img__outer:after {
+.prof-img:after {
   left: 0;
   transform: rotate(45deg);
   transform-origin :100% 100%;
 }
 
+@keyframes pounding{
+  0%{ transform: scale(1.5); }
+  100%{ transform: scale(1); }
+}
+
+.prof-img__outer {
+  overflow: hidden;
+  background-color: #fff;
+}
 
 @media (max-width: 480px) {
   .prof-img__outer {
