@@ -163,30 +163,7 @@ img {
 .prof-img {
   width: 100%;
   position: absolute;
-  width: 100px;
-  height: 90px;
-  left: 50%;
-  margin-top: -45px;
-  margin-left: -50px;
-   animation: pounding .5s linear infinite alternate;
-}
-
-.prof-img:before,
-.prof-img:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-.prof-img:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin :100% 100%;
+  animation: pounding .5s linear infinite alternate;
 }
 
 @keyframes pounding{
@@ -195,6 +172,9 @@ img {
 }
 
 .prof-img__outer {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
   overflow: hidden;
   background-color: #fff;
 }
