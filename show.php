@@ -40,7 +40,6 @@ $menuReviews = $menu->getReviews($reviews);
     <div class="review-list-wrapper">
       <div class="review-list">
         <div class="review-list-title">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/review.png" class='icon-review'>
           <h4>レビュー一覧</h4>
         </div>
         <?php foreach ($menuReviews as $review): ?>
@@ -48,9 +47,9 @@ $menuReviews = $menu->getReviews($reviews);
           <div class="review-list-item">
             <div class="review-user">
               <?php if ($user->getGender() == 'male'): ?>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/male.png" class='icon-user'>
+                <img src="/img/male.png" class='icon-user'>
               <?php else: ?>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/female.png" class='icon-user'>
+                <img src="/img/female.png" class='icon-user'>
               <?php endif ?>
               <p><?php echo $user->getName() ?></p>
             </div>

@@ -34,12 +34,12 @@ ol, ul {
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 a {
   text-decoration: none;
-  color: #4ac0b9;
+  color: #F8F8F8;
 }
 
 a:hover {
@@ -47,7 +47,7 @@ a:hover {
 }
 
 a:visited {
-  color: #4ac0b9;
+  color: #322f33;
 }
 
 img {
@@ -68,7 +68,7 @@ img {
   left: 0;
   z-index: 9999;
   width: 100%;
-  background-color: #022840;
+  background-color: rgba(11, 222, 233, 0.5);
   color: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -122,12 +122,6 @@ img {
   color: #fff;
 }
 
-@media (max-width: 480px) {
-  .header {
-    padding: 102px 0 40px;
-  }
-}
-
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,25 +144,10 @@ img {
   line-height: 4.8rem;
 }
 
-@media (max-width: 480px) {
-  .header__title {
-    margin-top: 16px;
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-}
-
 .header__description {
   margin-top: 20px;
   font-size: 2.4rem;
   text-align: center;
-}
-
-@media (max-width: 480px) {
-  .header__description {
-    margin-top: 8px;
-    font-size: 1.6rem;
-  }
 }
 
 .prof-img {
@@ -189,12 +168,6 @@ img {
   background-color: #fff;
 }
 
-@media (max-width: 480px) {
-  .prof-img__outer {
-    height: 160px;
-    width: 160px;
-  }
-}
 .menu__title {
   font-size: 4rem;
 }
@@ -212,6 +185,7 @@ img {
 }
 
 .menu-wrapper {
+  width: 103vw;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -234,7 +208,7 @@ img {
 }
 
 .menu-items {
-  margin-bottom: 60px;
+  margin-bottom: 60px 0;
 }
 
 .menu-item {
@@ -254,6 +228,34 @@ img {
 
 .menu-item span {
   font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+  }
+  .header {
+    padding: 102px 0 40px;
+  }
+  .header__title {
+    margin-top: 16px;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+  .header__description {
+    margin-top: 8px;
+    font-size: 1.6rem;
+  }
+  .prof-img__outer {
+    height: 160px;
+    width: 160px;
+  }
+  .menu-wrapper {
+    width: 100%;
+  }
+  .menu-item{
+    width: 100%;
+  }
 }
 
 input {
@@ -286,7 +288,7 @@ input[type="submit"] {
   background-color: #F8F8F8;
   line-height: 2;
   letter-spacing: 0.1em;
-  width: 500px;
+  width: 100%;
   margin: 60px auto;
   padding: 20px 0px 30px;
   border-radius: 5px;
@@ -319,13 +321,19 @@ input[type="submit"] {
 }
 
 .order-amount {
-  width: 40%;
+  width: 50%;
   text-align: left;
 }
 
 .order-price {
   width: 35%;
   text-align: right;
+}
+
+@media (max-width: 480px) {
+.order-wrapper{
+  font-size: 3.5vw;
+}
 }
 
 /* レビュー一覧 */
@@ -406,4 +414,10 @@ input[type="submit"] {
   margin-top: 16px;
   margin-left: 10px;
   font-size: 15px;
+}
+
+@media (max-width: 480px) {
+.review-wrapper{
+  width: 77%;
+}
 }
