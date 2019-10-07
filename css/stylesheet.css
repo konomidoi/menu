@@ -238,6 +238,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
    background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd);
 }
+input[type="submit"]:active {
+   border-style: none;
+   transform: translate3d(0, 3px, 0);
+}
 
 /* 注文確認 */
 .order-wrapper {
