@@ -13,23 +13,12 @@ require_once('menu.php');
   <!-- stylesheets -->
   <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
-  <!-- scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="/js/script.js"></script>
 </head>
 
 <body id="top">
   <nav class="nav fixed-top">
     <div class="nav__inner">
       <span class="nav__title">とろちゃんハウス</span>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="" href="#menu__title">とろちゃん Photos</a>
-        </li>
-        <li class="nav__item">
-          <a class="" href="#qa">Q&A</a>
-        </li>
-      </ul>
     </div>
   </nav>
 
@@ -66,6 +55,7 @@ require_once('menu.php');
             <input type="text" value="0" name="<?php echo $menu->getName() ?>">
             <span>枚</span>
           </div>
+          <!-- menu-item -->
         <?php endforeach ?>
       </div>
       <!-- menu-items -->

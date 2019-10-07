@@ -4,8 +4,8 @@ require_once('heart.php');
 require_once('review.php');
 require_once('user.php');
 
-$juice = new Drink('とろちゃんin公園', 450, '/img/toro01.jpg', 'アイスドリンクがつくよ！');
-$coffee = new Drink('おねむとろちゃん', 660, '/img/toro02.jpg', 'ホットドリンクがつくよ！');
+$juice = new Drink('とろちゃんin公園', 450, '/img/toro01.jpg', 'アイスドリンクつき');
+$coffee = new Drink('おねむとろちゃん', 660, '/img/toro02.jpg', 'ホットドリンクつき');
 $curry = new Heart('DQWとろちゃん', 410, '/img/toro03.jpg', 3);
 $pasta = new Heart('スヤスヤとろちゃん', 700, '/img/toro04.jpg', 1);
 

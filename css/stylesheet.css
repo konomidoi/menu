@@ -17,7 +17,7 @@ form, input, div {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 16px;
 }
 
 body {
@@ -39,7 +39,7 @@ h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #F8F8F8;
+  color: #090798;
 }
 
 a:hover {
@@ -117,7 +117,8 @@ img {
 
 .header {
   padding: 142px 0 80px;
-  background-image: url("../img/bg_toro.jpg");
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.5) 0%, rgba(151, 217, 225, 0.5) 100%),url(../img/bg_toro.jpg);
+  background-position: 50% 50%;
   background-size:cover;
   color: #fff;
 }
@@ -168,22 +169,6 @@ img {
   background-color: #fff;
 }
 
-.menu__title {
-  font-size: 4rem;
-}
-
-/* メニュー一覧 */
-.logo {
-  font-family: Pacifico, sans-serif;
-  font-size: 40px;
-  color: #4ac0b9;
-  display: inline-block;
-  padding: 20px 0;
-  margin: 80px 0 30px;
-  border-top: 5px solid #42c7c1;
-  border-bottom: 5px solid #42c7c1;
-}
-
 .menu-wrapper {
   width: 103vw;
   margin-bottom: 60px;
@@ -208,7 +193,7 @@ img {
 }
 
 .menu-items {
-  margin-bottom: 60px 0;
+  margin: 60px 0;
 }
 
 .menu-item {
@@ -232,10 +217,10 @@ img {
 
 @media (max-width: 480px) {
   h2, h3, h4, h5, h6 {
-    font-size: 2rem;
+    font-size: 2rem!important;
   }
   .header {
-    padding: 102px 0 40px;
+    padding: 75px 0 20px;
   }
   .header__title {
     margin-top: 16px;
