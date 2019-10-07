@@ -190,6 +190,9 @@ img {
 .menu-item span {
   font-size: 16px;
 }
+.menu__title + p{
+  margin-top: 10px;
+}
 
 @media (max-width: 480px) {
   h2, h3, h4, h5, h6 {
