@@ -28,7 +28,8 @@ require_once('menu.php');
         <img src="./img/toro.jpg" alt="とろちゃんハウス" class="prof-img">
       </p>
       <h1 id="title" class="header__title">とろちゃんハウス</h1>
-      <h3>とろちゃん<?php echo Menu::getCount() ?>匹掲載中♪</h3>
+      <h3>とろちゃん<?php echo Menu::getCount() ?>種掲載中♪<br>
+      人気の写真は❤️マークがついてるよ</h3>
     </div>
   </header>
 
@@ -52,7 +53,7 @@ require_once('menu.php');
               <?php endfor ?>
             <?php endif ?>
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
-            <input type="text" value="0" name="<?php echo $menu->getName() ?>">
+            <input type="number" value="0" name="<?php echo $menu->getName() ?>">
             <span>枚</span>
           </div>
           <!-- menu-item -->
