@@ -28,8 +28,7 @@ require_once('menu.php');
         <img src="./img/toro.jpg" alt="とろちゃんハウス" class="prof-img">
       </p>
       <h1 id="title" class="header__title">とろちゃんハウス</h1>
-      <h3>とろちゃん<?php echo Menu::getCount() ?>種掲載中♪<br>
-      人気の写真は❤️マークがついてるよ</h3>
+      <h3>とろちゃん<?php echo Menu::getCount() ?>種掲載中♪</h3>
     </div>
   </header>
 
@@ -37,6 +36,7 @@ require_once('menu.php');
     <form method="post" action="confirm.php">
       <div class="menu-items">
         <h2 class="menu__title">とろちゃん Photos</h2>
+        <p>人気の写真は❤️マークがついてるよ</p>
         <?php foreach ($menus as $menu): ?>
           <div class="menu-item">
             <img src="<?php echo $menu->getImage() ?>" class="menu-item-image">
