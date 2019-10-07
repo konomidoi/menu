@@ -242,7 +242,7 @@ input[type="submit"] {
   background-color: #F8F8F8;
   line-height: 2;
   letter-spacing: 0.1em;
-  width: 100%;
+  width: 96%;
   margin: 60px auto;
   padding: 20px 0px 30px;
   border-radius: 5px;
@@ -257,7 +257,7 @@ input[type="submit"] {
 
 .order-wrapper p {
   display: inline-block;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .order-wrapper h3 {
