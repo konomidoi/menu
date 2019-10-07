@@ -24,7 +24,7 @@ require_once('menu.php');
       <span class="nav__title">とろちゃんハウス</span>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="" href="#portfolio">とろちゃん Photos</a>
+          <a class="" href="#menu__title">とろちゃん Photos</a>
         </li>
         <li class="nav__item">
           <a class="" href="#qa">Q&A</a>
@@ -46,33 +46,7 @@ require_once('menu.php');
   <div class="menu-wrapper container">
     <form method="post" action="confirm.php">
       <div class="menu-items">
-
-        <section id="portfolio" class="section portfolio">
-          <div class="section__inner">
-            <h2 class="section__title">とろちゃん Photos</h2>
-            <div class="portfolio__inner">
-              <ul class="tabs js-tabs">
-                <li class="is-active">1day</li>
-                <li>2day</li>
-                <li>3day</li>
-                <li>4day</li>
-                <li>5day</li>
-              </ul>
-
-              <div class="tabContents js-tabContents">
-                <!-- tab 01 -->
-                <div class="tabContents__inner is-active">
-                  <h3>portfolio 01</h3>
-
-
-                </div>
-
-                <!-- tab 02 -->
-                <div class="tabContents__inner">
-                  <h3>portfolio 02</h3>
-
-                </div>
-
+        <h2 class="menu__title">とろちゃん Photos</h2>
         <?php foreach ($menus as $menu): ?>
           <div class="menu-item">
             <img src="<?php echo $menu->getImage() ?>" class="menu-item-image">
@@ -94,8 +68,10 @@ require_once('menu.php');
           </div>
         <?php endforeach ?>
       </div>
+      <!-- menu-items -->
       <input type="submit" value="注文する">
     </form>
   </div>
+  <!-- menu-wrapper container -->
 </body>
 </html>

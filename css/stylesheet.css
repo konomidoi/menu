@@ -3,12 +3,17 @@
   box-sizing: border-box;
 }
 
+/*reset*/
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p,
 form, input, div {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+  list-style: none;
 }
 
 html {
@@ -17,10 +22,15 @@ html {
 
 body {
   font-family: Lato, 'Hiragino Kaku Gothic Pro', sans-serif;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  line-height: 1;
   letter-spacing: 0.05em;
   color: #89949e;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
 }
 
 h2, h3, h4, h5, h6 {
@@ -185,228 +195,9 @@ img {
     width: 160px;
   }
 }
-
-.section {
-  padding: 80px 0;
-}
-
-@media (max-width: 480px) {
-  .section {
-    padding: 20px 0;
-  }
-}
-
-.section__title {
+.menu__title {
   font-size: 4rem;
 }
-
-.section__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.portfolio__inner {
-  width: 90%;
-  max-width: 600px;
-  margin: 40px auto 0;
-}
-
-@media (max-width: 480px) {
-  .portfolio__inner {
-    margin: 20px auto 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .portfolio__inner {
-    width: 100%;
-  }
-}
-
-.portfolio__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.portfolio__items > li {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  max-width: 48%;
-  list-style: none;
-}
-
-@media (max-width: 480px) {
-  .portfolio__items > li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-.portfolio__item {
-  position: relative;
-  display: block;
-  max-width: 280px;
-  margin: 8px auto;
-  border-radius: 16px;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.portfolio__item:before {
-  content: "";
-  display: block;
-  padding-top: 75%;
-}
-
-.portfolio__thumb {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.portfolio__thumb img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.tabs li {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 120px;
-          flex: 0 1 120px;
-  height: 45px;
-  margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #ccc;
-  border-radius: 5px 5px 0 0;
-  cursor: pointer;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.tabs li:nth-child(1) {
-  background-color: #ff6666;
-}
-
-.tabs li:nth-child(2) {
-  background-color: #ffe666;
-}
-
-.tabs li:nth-child(3) {
-  background-color: #99ff66;
-}
-
-.tabs li:nth-child(4) {
-  background-color: #66b3ff;
-}
-
-.tabs li:nth-child(5) {
-  background-color: #cc66ff;
-}
-
-.tabs li + li {
-  margin-left: 5px;
-}
-
-.tabs li.is-active {
-  height: 60px;
-  margin-top: 0;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.tabContents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 480px;
-  margin-top: 4px;
-}
-
-@media (max-width: 700px) {
-  .tabContents {
-    min-height: auto;
-  }
-}
-
-.tabContents__inner {
-  display: none;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  padding: 12px 24px;
-}
-
-.tabContents__inner:nth-child(1) {
-  background-color: #ffe6e6;
-}
-
-.tabContents__inner:nth-child(2) {
-  background-color: #fffbe6;
-}
-
-.tabContents__inner:nth-child(3) {
-  background-color: #eeffe6;
-}
-
-.tabContents__inner:nth-child(4) {
-  background-color: #e6f2ff;
-}
-
-.tabContents__inner:nth-child(5) {
-  background-color: #f7e6ff;
-}
-
-.tabContents__inner.is-active {
-  display: block;
-}
-
 
 /* メニュー一覧 */
 .logo {
